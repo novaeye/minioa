@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="show_sql">false</property>
+		<property name="hibernate.dialect">org.minioa.core.ExtMySQLInnoDBDialect</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost/oa</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">password</property>
+		<property name="hibernate.cache.provider_class">org.hibernate.cache.HashtableCacheProvider</property>
+
+		<mapping resource="org/minioa/core/org.hbm.xml" />
+		<mapping resource="org/minioa/core/department.hbm.xml" />
+		<mapping resource="org/minioa/core/user.hbm.xml" />
+		<mapping resource="org/minioa/core/job.hbm.xml" />
+		<mapping resource="org/minioa/core/role.hbm.xml" />
+		<mapping resource="org/minioa/core/role_user_relation.hbm.xml" />
+		<mapping resource="org/minioa/core/op.hbm.xml" />
+		<mapping resource="org/minioa/core/op_role_relation.hbm.xml" />
+		<mapping resource="org/minioa/core/topmenu.hbm.xml" />
+		<mapping resource="org/minioa/core/topmenu_role_relation.hbm.xml" />
+		<mapping resource="org/minioa/core/leftmenu.hbm.xml" />
+		<mapping resource="org/minioa/core/leftmenu_role_relation.hbm.xml" />
+		<mapping resource="org/minioa/core/pinyin.hbm.xml" />
+		<mapping resource="org/minioa/core/basicdata.hbm.xml" />
+		<mapping resource="org/minioa/core/news.hbm.xml" />
+		<mapping resource="org/minioa/core/news_attachment.hbm.xml" />
+		<mapping resource="org/minioa/core/search.hbm.xml" />
+		<mapping resource="org/minioa/core/ballot.hbm.xml" />
+		<mapping resource="org/minioa/core/ballot_items.hbm.xml" />
+		<mapping resource="org/minioa/core/log.hbm.xml" />
+		<mapping resource="org/minioa/core/form.hbm.xml" />
+		<mapping resource="org/minioa/core/form_field.hbm.xml" />
+		
+		<mapping resource="org/minioa/core/prop.hbm.xml" />
+	</session-factory>
+</hibernate-configuration>
