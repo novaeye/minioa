@@ -24,3 +24,5 @@ MiniOA Pdf在线阅读功能 http://blog.csdn.net/daiqianjie/article/details/815
 
 MiniOA交流群：MiniOA_java开发交流(128161498已满、167971041、168432371、168433074)
 
+
+           -- 原google code 地址: http://code.google.com/p/minioa/
